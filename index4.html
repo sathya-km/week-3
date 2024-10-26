@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Background Color Animation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            animation: backgroundChange 5s infinite alternate; 
+        }
+
+        @keyframes backgroundChange {
+            0% {
+                background-color: #ff5733; 
+            }
+            50% {
+                background-color: #33c3ff; 
+            }
+            100% {
+                background-color: #75ff33; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">Welcome to My Website!</div>
+
+</body>
+</html>

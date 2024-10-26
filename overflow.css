@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #b6d7c3;
+}
+
+.scrollable-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #cf538f;
+    padding: 10px;
+    overflow: scroll; /* Enable scrolling */
+    background-color: rgb(76, 149, 201);
+}
+
+.image-container {
+    width: 300px;
+    height: 200px; /* Set a specific height */
+    overflow: hidden; /* Crop the image */
+    margin-top: 20px;
+    border: 3px solid #121112;
+    position: relative;
+}
+
+.image-container img {
+    position: relative;
+    width: 100%; /* Make image take full width */
+    height: 100%; /* Maintain aspect ratio */
+}

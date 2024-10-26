@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Example</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px; 
+            box-sizing: border-box;
+        }
+
+        
+        @media (max-width: 600px) {
+            body {
+                flex-direction: column; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="column" style="background-color: lightblue;">Column 1</div>
+    <div class="column" style="background-color: lightgreen;">Column 2</div>
+
+</body>
+</html>

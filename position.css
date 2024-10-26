@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.header {
+    position: fixed; /* Fixed positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e77595;
+    color: rgb(106, 50, 211);
+    padding: 0px 0;
+    text-align: center;
+    z-index: 500; /* Ensures header is above other content */
+}
+
+.main-content {
+    padding-top: 60px; /* To prevent content from hiding behind the fixed header */
+}
+
+.tooltip-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tooltip {
+    display:right; /* Hidden by default */
+    position: absolute; /* Absolute positioning */
+    background-color: #44d3ad;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    z-index: 1000; /* Ensures tooltip is above other content */
+}
+
+.tooltip-btn:hover + .tooltip {
+    display: block; /* Show tooltip on hover */
+}

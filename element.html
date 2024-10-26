@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Icon Example</title>
+    <style>
+        .my-button {
+            position: relative;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .my-button::before {
+            content: '✨'; 
+            margin-right: 8px; 
+            font-size: 20px; 
+            vertical-align: middle; 
+        }
+        h2 {
+            position: relative;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2::after {
+            content: 'hello world';
+            display: block;
+            width: 50%; 
+            height: 2px; 
+            background-color: blue; 
+            margin-top: 10px; 
+        }
+    </style>
+</head>
+<body>
+
+    <button class="my-button">Click Me!</button>
+    <h2>My Heading</h2>
+
+</body>
+</html>

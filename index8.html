@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Responsive Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .full-screen {
+            height: 100vh; 
+            width: 100vw; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e698c6;
+            color: rgb(59, 121, 220);
+            text-align: center;
+        }
+
+    
+        .rem-text {
+            font-size: 3rem; 
+            margin: 0;
+        }
+
+        
+        .em-text {
+            font-size: 2em; 
+        }
+
+        
+        @media (max-width: 600px) {
+            .rem-text {
+                font-size: 2.5rem; 
+            }
+            .em-text {
+                font-size: 1.5em; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="full-screen">
+        <div>
+            <h1 class="rem-text">Welcome to My Website</h1>
+            <p class="em-text">This text adjusts based on the parent element's font size.</p>
+        </div>
+    </div>
+
+</body>
+</html>

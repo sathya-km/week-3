@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable Theme Example</title>
+    <style>
+        
+        :root {
+            --theme-color: #3498db; 
+            --spacing: 16px; 
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; 
+            color: #333; 
+            padding: var(--spacing);
+        }
+
+        h1 {
+            color: var(#333); 
+            margin-bottom: calc(var(32) * 2); 
+        }
+
+        p {
+            margin-bottom: var(--spacing); 
+        }
+
+        .btn {
+            background-color: var(#3498db);
+            color: rgb(216, 116, 213); 
+            padding: var(--spacing); 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+
+        .btn:hover {
+            background-color: #2980b9; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Themed Website</h1>
+    <p>This example demonstrates using CSS variables for theme colors and spacing.</p>
+    <button class="btn">Click Me!</button>
+
+    <!-- To change the theme color with a single line of code, you can use JavaScript -->
+    <script>
+        document.documentElement.style.setProperty('--theme-color', '#e74c3c'); // Change theme color
+    </script>
+
+</body>
+</html>
